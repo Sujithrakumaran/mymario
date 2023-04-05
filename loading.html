@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <title>LOADING</title>
+<style>
+    #load{
+        position: absolute; top:190px;left:500px;
+        color: blue; }
+    body{ 
+        background-color: #ddeee8;
+        height: 100vh;
+        width: 100%;
+    }
+    #loadouter{
+        border-style: groove;
+        position: fixed; top: 250px;left: 480px;
+        height: 50px;width:380px;
+        border-radius: 20px;
+        border-color: rgb(148, 146, 146);
+    }
+    #loadinner{
+        border-style: ridge;
+        position: fixed;top:258px;left:495px;
+        height:30px;width:350px;
+        border-radius: 50px;
+    }
+    #bar{
+        position: fixed;top:261px;left:498px;
+        height:32px;width:70px;
+        border-radius: 50px;
+        border: solid;
+        border-style: none; 
+        background-color: rgb(18, 226, 63);
+        animation-name: filling;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes filling{
+        0%{ width: 100px;}
+        50%{ width: 150px;}
+        75%{ width:220px;}
+        100%{ width:352px;}
+    }
+    img{
+        position: fixed;top:350px;left:600px;
+        height:50px;width:150px;
+       opacity: 0;
+       border-radius: 20px;
+       animation-name: start;
+       animation-delay: 4.4s;
+       animation-duration: infinite;
+       animation-fill-mode: forwards;
+
+    }
+    @keyframes start{
+        from{opacity: 0;}
+        to{opacity:1;}
+    }
+    #mario{
+      position: relative;top: 30px; left: 580px;
+      font-size: 50px;
+      font-weight:bolder;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+      animation-name: title;
+      
+    }
+    @keyframes title{
+        from{border-color: black;color: rgb(1, 1, 14);}
+        to{border-color: black;color: rgb(197, 4, 4);}
+    }
+
+</style>
+</head>
+<BODY> 
+    <p id ="mario">MARIO</p>
+    <h2 id="load">Loading...</h2>
+    <div id="loadouter">
+        
+    </div>
+    <div id ="loadinner">
+        
+    </div>
+    <div id="bar">
+        
+    </div>
+    <img src ="startbutton.jpg" onclick="document.location='mariobg.html'" >
+</BODY>
+</html>

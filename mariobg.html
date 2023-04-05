@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<head>
+    <title>mymario</title>
+    <style>
+        #base{
+            position: relative;top: 400px;
+            width: 300%;
+            height: 30px;
+
+        }
+        #one{  
+            position: relative;left:10px;
+            display: inline-flex;
+            background-color: rgb(179, 55, 51);
+            border:solid;
+            height:25px;
+            width: 0.57%;
+            
+        }
+        #start{ 
+            position: relative;top: 190px;
+            height: 200px;width: 200px;
+        }
+        #wall{ 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            position: relative;top:67px;left:800px;
+            height:100px;width:100px;
+        }
+        #two{ 
+            background-color:rgb(179, 55, 51) ;
+           border: solid; 
+           height: 25px;
+           width: 85%;
+        }
+        #wall1{ 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            position: relative;top:-34px;left:1400px;
+            height:100px;width:100px;
+        }
+        #wall2{ 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            position: relative;top:-134px;left:2100px;
+            height:100px;width:100px;
+        }
+        #wall3{ 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            position: relative;top:-234px;left:2600px;
+            height:100px;width:100px;
+        }
+        #wall4{ 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            position: relative;top:-334px;left:3200px;
+            height:100px;width:100px;
+        }
+        #end{ 
+            position: relative;top: -434px;left:3800px;
+            height: 100px;width: 200px;
+        }
+        .path{
+            height: 100vh;
+            width:300%;
+            animation-name: pathmove;
+            animation-duration: 10s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes pathmove{
+            from{transform: translateX(0px);}
+            to{transform: translateX(-2650px);}
+        }
+        #side{
+        position: relative;top: -410px;
+        left: 70px;
+        animation-name: jumpmove;
+        animation-delay: 1s;
+        animation-duration: 2s;
+        z-index: 3;
+        
+    }
+    @keyframes jumpmove{
+        0%{transform: translate(50px,-10px);}
+        50%{transform: translate(75px,-100px);}
+        100%{transform: translate(50px,-10px);}
+    }
+    button{
+        position: relative;top:-200px;left:500px;
+        height: 50px;width: 100px; 
+        background-color: aqua;
+    }
+    </style>
+</head>
+<body>
+<div class="path">
+    <div id ="base">
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+         <div id="one"></div>
+        <div id="one"></div>
+       <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+         <div id="one"></div>
+        <div id="one"></div>
+       <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+         <div id="one"></div>
+        <div id="one"></div>
+       <div id="one"></div>
+        <div id="one"></div>
+        <div id="one"></div>
+    </div>
+    <img  id="start"src="startimg.png">
+    <div id = "wall">
+        <div id ="two"></div>
+        <div id="two"></div>
+        <div id ="two"></div>
+        <div id ="two"></div>
+        <div id ="two"></div>
+        <div id="two"></div>
+    </div>
+    
+   
+    <div id = "wall1">
+        <div id ="two"></div>
+        <div id="two"></div>
+        <div id ="two"></div>
+        <div id ="two"></div>
+        <div id ="two"></div>
+        <div id="two"></div>
+    </div>
+    <div id = "wall2">
+        <div id ="two"></div>
+        <div id="two"></div>
+        <div id ="two"></div>
+        <div id ="two"></div>
+        <div id ="two"></div>
+        <div id="two"></div>
+    </div>   
+    <div id = "wall3">
+        <div id ="two"></div>
+        <div id="two"></div>
+        <div id ="two"></div>
+        <div id ="two"></div>
+        <div id ="two"></div>
+        <div id="two"></div>
+    </div> 
+    <div id = "wall4">
+        <div id ="two"></div>
+        <div id="two"></div>
+        <div id ="two"></div>
+        <div id ="two"></div>
+        <div id ="two"></div>
+        <div id="two"></div>
+    </div> 
+    <img id ="end" src ="end.webp">
+</div>
+<button onclick="up()">↑</button>
+    <div id="side">
+    <img src ="side.jpg" height="100px" width="100px">
+    
+<script>
+     function up(){
+     document.getElementById("side")[0].style;
+     
+     }
+    </script>
+</body>
+</html>
